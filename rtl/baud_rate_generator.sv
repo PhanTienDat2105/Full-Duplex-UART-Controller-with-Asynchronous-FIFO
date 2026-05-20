@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module baud_rate_generator 
-// --- KHỐI PARAMETER ĐƯỢC TÁCH RIÊNG RA BÊN NGOÀI ---
+
 #(
     parameter int SYS_CLK_FREQ = 100_000_000,
     parameter int BAUD_RATE    = 115200
