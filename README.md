@@ -29,7 +29,7 @@ When transferring pointers across asynchronous boundaries, standard binary value
 * Since Gray code changes only **1 bit at a time**, the synchronizer will at worst sample the old value or the new value, completely eliminating corrupted intermediate states.
 * To detect the `Full` condition with an extra wrap-around bit ($N+1$ bits), the design applies a dedicated Gray code condition: **The two most significant bits (MSBs) must be inverted, while all remaining lower bits must match exactly**.
 
-$$\text{Full Condition: } W_{gray\_next} == \{\sim wq2\_rgray[MSB:MSB-1], wq2\_rgray[MSB-2:0]\}$$
+
 
 ### 3. 16x Oversampling Technique
 
